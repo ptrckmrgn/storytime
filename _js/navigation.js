@@ -4,8 +4,6 @@ const nextPage = () => {
   if (page !== numPages) {
     page++;
     updatePolygonArrays('svg-' + page, 1);
-
-    document.querySelector('#story-1').style.display = 'block';
   }
 }
 
