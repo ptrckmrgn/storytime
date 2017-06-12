@@ -5,7 +5,8 @@ body {
 #pages {
     display: flex;
     justify-content: space-between;
-    height: calc(100vh - 10px);
+    flex-wrap: wrap;
+    height: calc(100vh - 5px);
     .page-left {
         display: flex;
         justify-content: flex-end;
@@ -40,4 +41,10 @@ body {
             }
         }
     }
+}
+
+#progress {
+    height: 5px;
+    width: 0%;
+    transition: width 1s;
 }

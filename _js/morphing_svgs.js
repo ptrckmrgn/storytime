@@ -1,7 +1,6 @@
 let toPolygonArray = [];
 let fromPolygonArray = [];
 let page = 1;
-const numPages = 3;
 
 // get points of the paths using regex
 const getCoordinates = (path) => {
