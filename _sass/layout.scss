@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+}
+
+#pages {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100vh - 10px);
+    .page-left {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: calc(50vw - 50px);
+        .image {
+            &.hidden {
+                display: none;
+            }
+        }
+    }
+    .page-right {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: calc(50vw - 50px);
+        .story-wrapper {
+            position: relative;
+            width: 500px;
+            transform-style: preserve-3d;
+            .story {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                visibility: visible;
+                opacity: 1;
+                transition: visibility 0s, opacity 1s linear;
+                &.hidden {
+                    visibility: hidden;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

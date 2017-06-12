@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic|Playfair+Display');
+
+$header-family: 'Playfair Display', serif;;
+$body-family: 'Gentium Book Basic', serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $header-family;
+}
+h1 {
+    font-size: 60px;
+}
+h2 {
+    margin-top: 0;
+    font-size: 36px;
+}
+p {
+    font-family: $body-family;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}

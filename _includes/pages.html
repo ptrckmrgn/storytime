@@ -1,18 +1,23 @@
-<div>
-  <a href="#" onclick="prevPage()">Previous</a>
-  <a href="#" class="active" onclick="nextPage()">Next</a>
+<div class="page-left">
+    <div>
+      <a href="#" onclick="prevPage()">Previous</a>
+      <a href="#" class="active" onclick="nextPage()">Next</a>
+    </div>
+
+    <div class="image-wrapper">
+        <!-- SVG images -->
+        {% include svgs/00-holder.html id="svg-holder" %}
+        {% include svgs/01-lego.html id="svg-1" %}
+        {% include svgs/02-beams.html id="svg-2" %}
+        {% include svgs/03-platform.html id="svg-3" %}
+    </div>
 </div>
 
-<div id="page-left">
-    <!-- SVG images -->
-    {% include svgs/00-holder.html id="svg-holder" %}
-    {% include svgs/01-lego.html id="svg-1" %}
-    {% include svgs/02-beams.html id="svg-2" %}
-    {% include svgs/03-platform.html id="svg-3" %}
-</div>
-
-<div id="page-right">
-    <!-- Story -->
-    {% include story/01-prologue.html %}
-    {% include story/02-engineer.html %}
+<div class="page-right">
+    <div class="story-wrapper">
+        <!-- Story -->
+        {% include story/01-cover.html %}
+        {% include story/02-prologue.html %}
+        {% include story/03-engineer.html %}
+    </div>
 </div>
