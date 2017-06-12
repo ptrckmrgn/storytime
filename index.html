@@ -5,14 +5,27 @@ title: storytime
 
 {{ include header.html }}
 
-<section id="cover">
-	{% include cover.html %}
-</section>
-
 <div id="progress"></div>
 
 <section id="pages">
-	{% include pages.html %}
+	<div class="page-left">
+	    <div class="image-wrapper">
+	        <!-- SVG images -->
+	        {% include svgs/_holder.html %}
+	        {% include svgs/lego.html page="1" %}
+	        {% include svgs/beams.html page="2" %}
+	        {% include svgs/platform.html page="3" %}
+	    </div>
+	</div>
+
+	<div class="page-right">
+	    <div class="story-wrapper">
+	        <!-- Stories -->
+	        {% include story/cover.html page="1" %}
+	        {% include story/prologue.html page="2" %}
+	        {% include story/engineer.html page="3" %}
+	    </div>
+	</div>
 </section>
 
 {{ include footer.html }}

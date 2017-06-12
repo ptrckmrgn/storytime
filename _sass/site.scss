@@ -1,16 +1,10 @@
+body {
+    background: #fff;
+}
 #progress {
     transition: width 1s;
     background: $primary-color;
 }
-
-.primary-color {
-    color: $primary-color;
-}
-
-body {
-    background: #fff;
-}
-
 .story {
     visibility: visible;
     opacity: 1;
@@ -19,6 +13,10 @@ body {
         visibility: hidden;
         opacity: 0;
     }
+}
+
+.primary-color {
+    color: $primary-color;
 }
 
 // Button style adapted from Ashley Nolan https://codepen.io/ashleynolan/pen/djpCG
