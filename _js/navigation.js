@@ -9,7 +9,7 @@ const redirect = () => {
     const hash = window.location.hash.substr(1);
 
     if (hash === '') {
-        const page = 1;
+        const page = 0;
 
         updatePolygonArrays('svg-' + page, 1);
         updateStory(page);
@@ -48,7 +48,7 @@ const updateStory = (page) => {
 const updateProgress = (page) => {
     const progress = document.querySelector('#progress');
 
-    const value = (page - 1) / (numPages - 1) * 100;
+    const value = (page) / (numPages - 1) * 100;
 
     progress.style.width = value + '%';
 }

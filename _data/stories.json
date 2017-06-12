@@ -1,0 +1,32 @@
+[
+    {
+        "id": "prologue",
+        "title": "Prologue",
+        "body": "
+            <p>
+                On the loungeroom floor, on a well-worn Persian carpet, sits Patrick Morgan and his Lego. This is 8-year-old Patrick mind you, current day Patrick would love to play with Lego all day, but feels that it’s not quite as socially acceptable. But sit there all day he would, creating and recreating in an infinite number of permutations from the big bag of hand-me-down Lego sets.
+            </p>
+            <p>
+                His mother is an artist, his father a journalist, his older brother and sister are designers. Creativity apparently runs through the Morgan blood. So, when Patrick started showing more interest in calculus than in calligraphy his family was concerned…
+            </p>"
+    },
+    {
+        "id": "engineer",
+        "title": "An Engineer in the Family",
+        "body": "
+            <p>
+                He was taken to expert after expert, from psychologists and behavioural experts, to acupuncturists and natural healers, but no one could figure it out. Finally, a gastroenterologist deflated announced. ‘I’m sorry. I think your son is going to be… an engineer.’ His parents braced themselves against the reality that had just been dropped on them. Though in their hearts, they already knew it to be true. They should have never given him Lego, they should have known!
+            </p>
+            <p>
+                Patrick jumped at the idea of becoming an engineer. Creating things using maths and science! Why would anyone want to do anything else? With some reluctance, his parents allowed him to pursue his… unconventional dreams and on he went, studying a <a id='btn-engdegree' class='btn-modal' href='#engdegree'>Bachelor of Civil Engineering and achieving first class honours</a>.
+            </p>"
+    },
+    {
+        "id": "early",
+        "title": "An Early Career",
+        "body": "
+            <p>
+                Patrick soon found a place in the <a id='btn-engdegree' class='btn-modal' href='#ais'>Asset Integrity team of WorleyParsons</a>, a multi-national engineering consultancy firm. Here he worked on large projects for offshore facilities around the world, doing complex sounding things like “seismic analyses” and “cathodic protection calculations”. But something wasn’t right. He had fallen in love with the idea of creating amazing things, but his reality was different. He was creating things sure, but he was finding that they were very, very small things, that were part of a giant thing that was halfway around the world. Patrick would rarely even get to see photos, let alone see his creation in person. He wasn’t sure he could dedicate his life to such pursuits.
+            </p>"
+    }
+]
