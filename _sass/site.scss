@@ -1,5 +1,5 @@
 body {
-    background: #fff;
+    background: #eee;
 }
 #progress {
     transition: width 1s;
@@ -20,7 +20,9 @@ body {
 }
 
 // Button style adapted from Ashley Nolan https://codepen.io/ashleynolan/pen/djpCG
-button {
+.btn {
+    display: inline-block;
+    text-decoration: none;
     font-size: 20px;
     background-color: #ddd;
     color: #333;
@@ -50,11 +52,11 @@ button {
         		box-shadow: 0 8px 25px -8px rgba(31, 31, 31, 0.5);
         }
     }
-    &.primary {
+    &.btn-primary {
         background-color: $primary-color;
         color: #222;
     }
-    &.large {
+    &.btn-large {
         font-size: 24px;
         padding: 10px 26px 8px 26px;
     }
