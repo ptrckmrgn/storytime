@@ -15,7 +15,7 @@ h4,
 h5,
 h6 {
     font-family: $header-family;
-    color: $header-color;
+    color: #111;
 }
 h1 {
     font-size: 60px;
@@ -23,13 +23,24 @@ h1 {
     margin-bottom: 0.33em;
 }
 h2 {
-    margin-top: 0;
     font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 0.33em;
+}
+h3 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0.33em;
+}
+h4 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0.33em;
 }
 p {
     font-size: 18px;
     line-height: 1.6;
-    color: $body-color;
+    color: #333;
 }
 .subtitle {
     font-size: 16px;
