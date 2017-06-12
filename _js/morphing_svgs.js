@@ -1,6 +1,5 @@
 let toPolygonArray = [];
 let fromPolygonArray = [];
-let page = 1;
 
 // get points of the paths using regex
 const getCoordinates = (path) => {
@@ -62,25 +61,11 @@ const animatePolygons = (duration) => {
 }
 
 // add points attribute values to arrays
-const updatePolygonArrays = (nextSvgId, duration) => {
-  const paths = document.getElementById(nextSvgId).querySelectorAll('path');
+const updatePolygonArrays = (page, duration) => {
+  const paths = document.getElementById('svg-' + page).querySelectorAll('path');
 
   toPolygonArray = createPathObjects(paths);
   animatePolygons(duration);
   fromPolygonArray = toPolygonArray;
 }
 
-window.onload = () => {
-  initialiseSvg();
-}
-
-const initialiseSvg = () => {
-  const paths = document.querySelector('#svg-holder').querySelectorAll('path');
-
-  paths.forEach((path, i) => {
-    path.setAttribute('fill', '');
-    path.setAttribute('fill-opacity', '');
-  });
-
-  updatePolygonArrays('svg-1', 0);
-}
