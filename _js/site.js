@@ -25,7 +25,7 @@ const loadPage = () => {
     const hash = window.location.hash.substr(1);
     let page = 0;
 
-    if (hash.substring(0,4) === 'page') {
+    if (hash.substring(0, 4) === 'page') {
         page = hash.match(/\d+/)[0];
     }
 
@@ -36,21 +36,42 @@ const loadPage = () => {
 
 // Removes svg attributes that interfere so that opacity/color are not doubled.
 const initialiseSvg = () => {
-  const paths = document.querySelector('#svg-holder').querySelectorAll('path');
+    const paths = document.querySelector('#svg-holder').querySelectorAll('path');
 
-  paths.forEach((path, i) => {
-    path.setAttribute('fill', '');
-    path.setAttribute('fill-opacity', '');
-  });
+    paths.forEach((path, i) => {
+        path.setAttribute('fill', '');
+        path.setAttribute('fill-opacity', '');
+    });
 
-  updatePolygonArrays(0, 0);
+    updatePolygonArrays(0, 0);
+}
+
+// Prevent viewing from small devices.
+const checkDevice = () => {
+    const maxWidth = 950;
+    const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    console.log(width);
+
+    if (width < maxWidth) {
+        document.querySelector('#block').classList.remove("hidden");
+    }
+    else {
+        document.querySelector('#block').classList.add("hidden");
+    }
 }
 
 // Update events
 window.onload = () => {
     initialiseSvg();
+    checkDevice();
     loadPage();
 }
+
 window.onhashchange = () => {
     loadPage();
 };
+
+window.onresize = () => {
+    checkDevice();
+}

@@ -5,6 +5,26 @@ body {
     transition: width 1s;
     background: $primary-color;
 }
+#block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #222;
+    &.hidden {
+        display: none;
+    }
+    h1, p {
+        text-align: center;
+        color: #fff;
+    }
+}
 .story {
     visibility: visible;
     opacity: 1;
