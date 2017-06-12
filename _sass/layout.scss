@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    height: calc(100vh - 5px);
+    height: calc(97vh - 5px);
     .page-left {
         display: flex;
         justify-content: flex-end;
@@ -31,13 +31,6 @@ body {
                 position: absolute;
                 top: 50%;
                 transform: translateY(-50%);
-                visibility: visible;
-                opacity: 1;
-                transition: visibility 0s, opacity 1s linear;
-                &.hidden {
-                    visibility: hidden;
-                    opacity: 0;
-                }
             }
         }
     }
@@ -46,5 +39,4 @@ body {
 #progress {
     height: 5px;
     width: 0%;
-    transition: width 1s;
 }

@@ -1,3 +1,63 @@
 #progress {
-    background: #9ACD66;
+    transition: width 1s;
+    background: $primary-color;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+body {
+    background: #fff;
+}
+
+.story {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s;
+    &.hidden {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+// Button style adapted from Ashley Nolan https://codepen.io/ashleynolan/pen/djpCG
+button {
+    font-size: 20px;
+    background-color: #ddd;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    margin: 10px 10px 0 0;
+    padding: 9px 20px 7px 20px;
+    transform-style: flat;
+    transition: all 250ms ease-out;
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        z-index: -2;
+        transition: all 250ms ease-out;
+    }
+    &:before {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 98%;
+    }
+    &:hover, &:focus {
+        outline: 0;
+        &:before {
+        		box-shadow: 0 8px 25px -8px rgba(31, 31, 31, 0.5);
+        }
+    }
+    &.primary {
+        background-color: $primary-color;
+        color: #222;
+    }
+    &.large {
+        font-size: 24px;
+        padding: 10px 26px 8px 26px;
+    }
 }
