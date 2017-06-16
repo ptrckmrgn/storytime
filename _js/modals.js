@@ -27,11 +27,12 @@ modals.forEach((modal, i) => {
     close.onclick = () => {
         hideModal(modal);
     }
-
-    // Close modal by clicking outside it
-    window.onclick = (event) => {
-        if (event.target == modal) {
-            hideModal(modal);
-        }
-    }
 });
+
+// Close modal by clicking outside it
+window.onclick = (event) => {
+    console.log(event.target, event.target.closest('.modal'));
+    if (event.target.closest('.modal') != null) {
+        hideModal(event.target);
+    }
+}

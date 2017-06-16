@@ -53,6 +53,8 @@ body {
     padding: 9px 20px 7px 20px;
     transform-style: flat;
     transition: all 250ms ease-out;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+    border-color: #dedede;
     &:before,
     &:after {
         content: "";
@@ -69,15 +71,20 @@ body {
     &:hover, &:focus {
         outline: 0;
         &:before {
-        		box-shadow: 0 8px 25px -8px rgba(31, 31, 31, 0.5);
+        		box-shadow: 0 10px 19px -8px rgba(31, 31, 31, 0.5);
         }
     }
     &.btn-primary {
         background-color: $primary-color;
         color: #222;
     }
+    &.btn-modal {
+        background-color: $secondary-color;
+        color: #fff;
+        margin-bottom: 20px;
+    }
     &.btn-large {
         font-size: 24px;
-        padding: 10px 26px 8px 26px;
+        padding: 10px 20px 10px 20px;
     }
 }

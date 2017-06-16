@@ -1,32 +1,136 @@
 [
     {
-        "id": "prologue",
+        "id": "1",
         "title": "Prologue",
         "body": "
             <p>
-                On the loungeroom floor, on a well-worn Persian carpet, sits Patrick Morgan and his Lego. This is 8-year-old Patrick mind you, current day Patrick would love to play with Lego all day, but feels that it’s not quite as socially acceptable. But sit there all day he would, creating and recreating in an infinite number of permutations from the big bag of hand-me-down Lego sets.
+                On the loungeroom floor, on a well-worn Persian carpet, sits Patrick Morgan and his Lego. This is 8-year-old Patrick mind you, current day Patrick would love to play with Lego all day, but feels that it’s not as socially acceptable. But sit there all day he would, creating and recreating an infinite number of permutations from the big bag of hand-me-down Lego sets.
             </p>
             <p>
-                His mother is an artist, his father a journalist, his older brother and sister are designers. Creativity apparently runs through the Morgan blood. So, when Patrick started showing more interest in calculus than in calligraphy his family was concerned…
-            </p>"
+                His mother is an artist, his father a journalist, his older brother and sister are designers. Creativity apparently runs through the Morgan blood. So, when Patrick started showing more interest in calculus than in calligraphy his family was confused…
+            </p>",
+        "buttons": "show"
     },
     {
-        "id": "engineer",
+        "id": "2",
         "title": "An Engineer in the Family",
         "body": "
             <p>
-                He was taken to expert after expert, from psychologists and behavioural experts, to acupuncturists and natural healers, but no one could figure it out. Finally, a gastroenterologist deflated announced. ‘I’m sorry. I think your son is going to be… an engineer.’ His parents braced themselves against the reality that had just been dropped on them. Though in their hearts, they already knew it to be true. They should have never given him Lego, they should have known!
-            </p>
-            <p>
-                Patrick jumped at the idea of becoming an engineer. Creating things using maths and science! Why would anyone want to do anything else? With some reluctance, his parents allowed him to pursue his… unconventional dreams and on he went, studying a <a id='btn-engdegree' class='btn-modal' href='#engdegree'>Bachelor of Civil Engineering and achieving first class honours</a>.
-            </p>"
+                From the early years of high school, Patrick had in his mind that he wanted to be an engineer. ‘Building things using maths and science, why would anyone want to do anything else?’ So on he went, learning about forces, fractions, foundations and everything else he’d need to know to be a great engineer. In 2012, he graduated from a Bachelor of Civil Engineering at Monash University achieving first class honours.
+            </p>",
+        "buttons": "show"
     },
     {
-        "id": "early",
-        "title": "An Early Career",
+        "id": "3",
+        "title": "Structural Sleuth",
         "body": "
             <p>
-                Patrick soon found a place in the <a id='btn-engdegree' class='btn-modal' href='#ais'>Asset Integrity team of WorleyParsons</a>, a multi-national engineering consultancy firm. Here he worked on large projects for offshore facilities around the world, doing complex sounding things like “seismic analyses” and “cathodic protection calculations”. But something wasn’t right. He had fallen in love with the idea of creating amazing things, but his reality was different. He was creating things sure, but he was finding that they were very, very small things, that were part of a giant thing that was halfway around the world. Patrick would rarely even get to see photos, let alone see his creation in person. He wasn’t sure he could dedicate his life to such pursuits.
-            </p>"
+                Patrick soon found a place in a team at WorleyParsons, a multi-national engineering consultancy. The Asset Integrity Solutions group he was placed in was formed to tackle the question: what do we do when our facility is approaching the end of its design life?
+            </p>
+            <p>
+                Patrick soon found himself donning the Sherlock Holmes hat and diving into the investigation of facilities equal parts massive and complex. Structural analyses, inspection reports, damage reports, codes, and standards all had a part to play in determining the remaining life for a facility as well as what would be required to extend that life. The work was challenging and rewarding, but something wasn’t right.
+            </p>",
+        "buttons": "show"
+    },
+    {
+        "id": "4",
+        "title": "Feeling Uneasy",
+        "body": "
+            <p>
+                Patrick had fallen in love with the idea of creating amazing things, but his reality was turning out differently. From his work at WorleyParsons, and from what he could see throughout the industry he wasn’t convinced there was a future there for him. The industry was becoming increasingly commoditised, so to be able to secure a future in it, his only real options were to take a management career path or become a specialist. Neither appealed much to Patrick at this point in his life.
+            </p>
+            <p>
+                He didn’t want to spend his days pushing papers while everyone else got to have all the fun. But he also didn’t want to dedicate his life to building small parts of giant things that were halfway around the world. Patrick would rarely even get to see photos, let alone see his projects in person. Discouraged, but not defeated, Patrick started to look outside his group to find other things that may be able to spark his passions once more.
+            </p>",
+        "buttons": "show"
+    },
+    {
+        "id": "5",
+        "title": "Introduction to Design",
+        "body": "
+            <p>
+                In a stroke of serendipity, Patrick met the newly appointed Innovation Manager for the company. A Deloitte alumna, she brought with her a way of thinking starkly different to that of the engineering world. She also brought with her a little concept she called Design Thinking. Before long, Patrick was running workshops and helping her to spread the good word to the wider organisation.
+            </p>
+            <p>
+                Patrick also joined the corporate responsibility committee and started organising events with Engineers Without Borders. When a company announcement appeared for an award to attend Dialogues on Development (a study tour in Cambodia run by Engineers Without Borders), Patrick applied straight away. To his surprise, he was awarded the funding to go on the trip. Here he learned about sustainable and human-centred development in an engineering context (<a href='http://camberwelltocambodia.wordpress.com'>chronicled in his blog</a>). His creative brain, made dormant from years of calculations and standards (and an outdated school system…) was starting to come alive.
+            </p>",
+        "buttons": "show"
+    },
+    {
+        "id": "6",
+        "title": "A New Direction",
+        "body": "
+            <p>
+                Enough was enough, Patrick was done with the world of pipe supports and structural calculations. He wanted to create things that human beings actually interacted with and experienced in a meaningful way. He had always loved tinkering with computers and had even been doing a bit of programming here and there. What drew him to it most was the ease with which he could create. He could start coding away and at the end of a few hours, there was this thing he had built. And he could show that thing to other people and they could indeed interact with it and experience it!
+            </p>
+            <p>
+                He took the plunge and began to study a Bachelor of Information Technology part-time with RMIT.
+            </p>",
+        "buttons": "show"
+    },
+    {
+        "id": "7",
+        "title": "A New Job",
+        "body": "
+            <p>
+                Work was slowing down in his Asset Integrity Solutions team and indeed the entire business. Times were a tough, and as businesses do during these periods, WorleyParsons decided to mix things up. They spun off an advisory firm (Advisian), a delivery centre in India, an innovation group, and a team focussed on digital transformation. It was in this last group that Patrick one day found himself.
+            </p>
+            <p>
+                Advisian Digital was a startup inside a multinational. All the ambition and pluck of a group of people taking on the world, with the backing (and admittedly the baggage) of a large enterprise. He was outside his comfort zone, but loving every minute of it. A product-based team, he soon found himself working on marketing strategies, building a web-presence and even product managing a new offering.
+            </p>",
+        "buttons": "show"
+    },
+    {
+        "id": "8",
+        "title": "Lessons Learned",
+        "body": "
+            <p>
+                One day a challenge appeared in front of Patrick. For his team and the broader organisation to keep up with the latest and greatest technology they needed a way to store, share, and discuss large amounts of information about the global tech industry. For some reason the existing method of email, phone and carrier pigeon was just not cutting it.
+            </p>
+            <p>
+                Patrick set to work. It was his first real opportunity to show off some of his newly learned skills. Unfortunately, those skills did not yet include user experience design…
+            </p>
+            <a id='btn-techtalk' class='btn btn-modal btn-large' href='#techtalk'>Project: Tech Talk</a><br />",
+        "buttons": "show"
+    },
+    {
+        "id": "9",
+        "title": "TalentX",
+        "body": "
+            <p>
+                A chance for redemption was just around the corner. The CEO was looking for a way to tap into the global trend of the “gig economy” and at the same time find a better way of keeping in touch with alumni that had recently left the business. The digital team was tasked with finding a solution.
+            </p>
+            <p>
+                By now Patrick was nearing the end of his degree. Having just finished a unit covering UX design and having not too long ago learned some valuable lessons, he was much more confident with the direction to take this project. At the request of his manager, Patrick set about planning the concept phase. Before long, they had worked out that if they were going to realise the CEO’s goals, they had to create something themselves. And so began the UX design of the project codenamed “TalentX”.
+            </p>
+            <a id='btn-talentx' class='btn btn-modal btn-large' href='#talentx'>Project: TalentX</a><br />",
+        "buttons": "show"
+    },
+    {
+        "id": "10",
+        "title": "A New Home",
+        "body": "
+            <p>
+                It’s been many months since Patrick started the concept and UX design work for TalentX. He has learned a lot from his successes and mistakes. Now though, he has come to a cross roads. His opportunities to grow and people to learn from are quickly running dry at his current firm. His organisation has been an amazing place to start his career, but they cannot provide what he needs to take his next steps. So, Patrick has decided to apply user experience design to his career.
+            </p>
+            <a id='btn-career' class='btn btn-modal btn-large' href='#career'>Project: Career</a><br />",
+        "buttons": "show"
+    },
+    {
+        "id": "11",
+        "title": "Epilogue",
+        "body": "
+            <p>
+                Patrick needs a new home. A place filled with great people he can surround himself with and learn from. A team with a purpose that he can believe and invest in. And a fun and diverse environment that encourages innovation and creativity.
+            </p>
+            <p>
+                He hopes that new home is Deloitte.
+            </p>
+            <p class='subtitle'>
+                Thanks for reading my story.
+            </p>
+            <a href='#page-10' class='btn'>Back</a>
+            <a href='#page-0' class='btn btn-primary'>Done</a>",
+        "buttons": "none"
     }
 ]

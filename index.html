@@ -22,7 +22,15 @@ title: storytime
 			{% include svgs/patrick.html page="0" %}
 	        {% include svgs/lego.html page="1" %}
 	        {% include svgs/beams.html page="2" %}
-	        {% include svgs/platform.html page="3" %}
+			{% include svgs/platform.html page="3" %}
+			{% include svgs/platform.html page="4" %}
+			{% include svgs/platform.html page="5" %}
+			{% include svgs/platform.html page="6" %}
+			{% include svgs/platform.html page="7" %}
+			{% include svgs/platform.html page="8" %}
+			{% include svgs/platform.html page="9" %}
+			{% include svgs/platform.html page="10" %}
+	        {% include svgs/platform.html page="11" %}
 	    </div>
 	</div>
 
@@ -34,7 +42,7 @@ title: storytime
 			    <h3>by Patrick Morgan</h3>
 			    <a href="#page-1" class="btn btn-large btn-primary" style="margin: 20px 0 50px 0">Start</a>
 			    <p class="subtitle">
-			        If you're a bit pressed for time, here's a <a href="#">concise version</a>.
+			        If you're a bit pressed for time, here's a <a href="/concise.html">concise version</a>.
 			    </p>
 			</div>
 
@@ -42,8 +50,10 @@ title: storytime
 				<div id="story-{{ forloop.index }}" class="story hidden">
 				    <h2>{{ story.title }}</h2>
 				    {{ story.body }}
-				    <a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
-					<a href="#page-{{ forloop.index | plus: 1 }}" class="btn btn-primary">Next</a>
+					{% if story.buttons == 'show' %}
+					    <a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
+						<a href="#page-{{ forloop.index | plus: 1 }}" class="btn btn-primary">Next</a>
+					{% endif %}
 				</div>
 			{% endfor %}
 	    </div>
@@ -51,6 +61,8 @@ title: storytime
 </section>
 
 <!-- Tangents -->
-{% include tangents/engdegree.html %}
+{% include projects/techtalk.html %}
+{% include projects/talentx.html %}
+{% include projects/career.html %}
 
 {{ include footer.html }}

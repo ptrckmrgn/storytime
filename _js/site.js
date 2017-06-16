@@ -51,8 +51,6 @@ const checkDevice = () => {
     const maxWidth = 950;
     const width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-    console.log(width);
-
     if (width < maxWidth) {
         document.querySelector('#block').classList.remove("hidden");
     }
