@@ -1,0 +1,69 @@
+<div id="progress"></div>
+
+<section id="pages">
+	<div class="page-left">
+	    <div class="image-wrapper">
+	        <!-- SVG images -->
+	        {% include svgs/_holder.html %}
+			{% include svgs/patrick.html page="0" %}
+	        {% include svgs/lego.html page="1" %}
+	        {% include svgs/beams.html page="2" %}
+			{% include svgs/platform.html page="3" %}
+			{% include svgs/questions.html page="4" %}
+			{% include svgs/cambodia.html page="5" %}
+			{% include svgs/computer.html page="6" %}
+			{% include svgs/advisian.html page="7" %}
+			{% include svgs/code.html page="8" %}
+			{% include svgs/postits.html page="9" %}
+			{% include svgs/bindle2.html page="10" %}
+	        {% include svgs/deloitte.html page="11" %}
+	    </div>
+	</div>
+
+	<div class="page-right">
+	    <div class="story-wrapper">
+	        <!-- Stories -->
+			<div id="story-0" class="story">
+			    <h1>Journey to the Centre of Deloitte<span class="deloitte-green">.</span></h1>
+			    <h3>by Patrick Morgan</h3>
+			    <a href="#page-1" class="btn btn-large btn-primary" style="margin: 20px 0 50px 0">Start</a>
+			    <p class="subtitle">
+			        If you're a bit pressed for time, here's a <a href="#concise">concise version</a>.
+			    </p>
+			</div>
+
+			{% for story in site.data.stories %}
+				<div id="story-{{ forloop.index }}" class="story hidden">
+				    <h2>{{ story.title }}</h2>
+				    {{ story.body }}
+					{% if story.buttons == 'show' %}
+					    <a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
+						<a href="#page-{{ forloop.index | plus: 1 }}" class="btn btn-primary">Next</a>
+					{% endif %}
+				</div>
+			{% endfor %}
+	    </div>
+	</div>
+</section>
+
+<div id="navigation">
+	<div id="navigation-wrapper">
+		<!-- Navigation -->
+		{% for story in site.data.stories %}
+		<div id="navigation-{{ forloop.index }}" class="navigation hidden">
+			{% if story.navigation == 'middle' %}
+			<a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
+			<a href="#page-{{ forloop.index | plus: 1 }}" class="btn btn-primary">Next</a>
+			{% else %}
+			<a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
+			<a href="#page-0" class="btn btn-secondary">Finish</a>
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
+<!-- Tangents -->
+{% include projects/techtalk.html %}
+{% include projects/talentx.html %}
+{% include projects/career.html %}

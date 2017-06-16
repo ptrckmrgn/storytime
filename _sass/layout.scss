@@ -8,13 +8,11 @@ body {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        //height: calc(97vh - 5px - 20vh);
         height: $story-height;
         padding-top: calc((100vh - 5px - #{$story-height} - 50px) / 2);
         .page-left {
             display: flex;
             justify-content: flex-end;
-            //align-items: flex-end;
             width: calc(50vw - 50px);
             .image {
                 &.hidden {
@@ -25,7 +23,6 @@ body {
         .page-right {
             display: flex;
             justify-content: flex-start;
-            //align-items: flex-end;
             width: calc(50vw - 50px);
             .story-wrapper {
                 position: relative;
@@ -34,8 +31,6 @@ body {
                 .story {
                     height: $story-height;
                     position: absolute;
-                    //top: 50%;
-                    //transform: translateY(-50%);
                     bottom: 0;
                     display: flex;
                     flex-direction: column;

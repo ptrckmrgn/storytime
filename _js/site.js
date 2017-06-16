@@ -1,6 +1,6 @@
 const numPages = document.querySelectorAll('.story').length;
 
-// Update the part of the story being shown.
+// Update the part of the story being shown
 const updateStory = (page) => {
     const stories = document.querySelectorAll('.story');
 
@@ -11,7 +11,7 @@ const updateStory = (page) => {
     document.querySelector('#story-' + page).classList.remove('hidden');
 }
 
-// Update the progress bar.
+// Update the progress bar
 const updateProgress = (page) => {
     const progress = document.querySelector('#progress');
 
@@ -20,7 +20,7 @@ const updateProgress = (page) => {
     progress.style.width = value + '%';
 }
 
-// Update the navigation buttons.
+// Update the navigation buttons
 const updateNavigation = (page) => {
     const navigations = document.querySelectorAll('.navigation');
 
@@ -37,8 +37,7 @@ const loadConcise = (load) => {
 
     if (load) {
         concise.classList.remove("hidden");
-    }
-    else {
+    } else {
         concise.classList.add("hiding");
 
         // Delay "z-index" to allow opacity fade to finish
@@ -49,7 +48,7 @@ const loadConcise = (load) => {
     }
 }
 
-// Load the story, svg and progress for the given page.
+// Load the story, svg and progress for the given page
 const loadPage = () => {
     const hash = window.location.hash.substr(1);
     let page = 0;
@@ -62,13 +61,12 @@ const loadPage = () => {
         updateStory(page);
         updateProgress(page);
         updateNavigation(page);
-    }
-    else if (hash === 'concise') {
+    } else if (hash === 'concise') {
         loadConcise(true);
     }
 }
 
-// Removes svg attributes that interfere so that opacity/color are not doubled.
+// Removes svg attributes that interfere so that opacity/color are not doubled
 const initialiseSvg = () => {
     const paths = document.querySelector('#svg-holder').querySelectorAll('path');
 
@@ -87,8 +85,7 @@ const checkDevice = () => {
 
     if (width < maxWidth) {
         document.querySelector('#block').classList.remove("hidden");
-    }
-    else {
+    } else {
         document.querySelector('#block').classList.add("hidden");
     }
 }
