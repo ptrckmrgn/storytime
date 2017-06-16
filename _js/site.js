@@ -20,6 +20,17 @@ const updateProgress = (page) => {
     progress.style.width = value + '%';
 }
 
+// Update the navigation buttons.
+const updateNavigation = (page) => {
+    const navigations = document.querySelectorAll('.navigation');
+
+    navigations.forEach((navigation, i) => {
+        navigation.classList.add('hidden');
+    });
+
+    document.querySelector('#navigation-' + page).classList.remove('hidden');
+}
+
 // Load the story, svg and progress for the given page.
 const loadPage = () => {
     const hash = window.location.hash.substr(1);
@@ -32,6 +43,7 @@ const loadPage = () => {
     updatePolygonArrays(page, 1);
     updateStory(page);
     updateProgress(page);
+    updateNavigation(page);
 }
 
 // Removes svg attributes that interfere so that opacity/color are not doubled.

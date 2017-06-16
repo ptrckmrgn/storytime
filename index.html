@@ -60,6 +60,23 @@ title: storytime
 	</div>
 </section>
 
+<div id="navigation">
+	<div id="navigation-wrapper">
+		<!-- Navigation -->
+		{% for story in site.data.stories %}
+		<div id="navigation-{{ forloop.index }}" class="navigation hidden">
+			{% if story.navigation == 'middle' %}
+			<a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
+			<a href="#page-{{ forloop.index | plus: 1 }}" class="btn btn-primary">Next</a>
+			{% else %}
+			<a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
+			<a href="#page-0" class="btn btn-secondary">Finish</a>
+			{% endif %}
+		</div>
+		{% endfor %}
+	</div>
+</div>
+
 <!-- Tangents -->
 {% include projects/techtalk.html %}
 {% include projects/talentx.html %}

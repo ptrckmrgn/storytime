@@ -1,42 +1,52 @@
 body {
     margin: 0;
-}
-
-#pages {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: calc(97vh - 5px);
-    .page-left {
+    #progress {
+        height: 5px;
+        width: 0%;
+    }
+    #pages {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        width: calc(50vw - 50px);
-        .image {
-            &.hidden {
-                display: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        //height: calc(97vh - 5px - 20vh);
+        height: $story-height;
+        padding-top: calc((100vh - 5px - #{$story-height} - 50px) / 2);
+        .page-left {
+            display: flex;
+            justify-content: flex-end;
+            //align-items: flex-end;
+            width: calc(50vw - 50px);
+            .image {
+                &.hidden {
+                    display: none;
+                }
+            }
+        }
+        .page-right {
+            display: flex;
+            justify-content: flex-start;
+            //align-items: flex-end;
+            width: calc(50vw - 50px);
+            .story-wrapper {
+                position: relative;
+                width: 550px;
+                transform-style: preserve-3d;
+                .story {
+                    height: $story-height;
+                    position: absolute;
+                    //top: 50%;
+                    //transform: translateY(-50%);
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                }
             }
         }
     }
-    .page-right {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        width: calc(50vw - 50px);
-        .story-wrapper {
-            position: relative;
-            width: 500px;
-            transform-style: preserve-3d;
-            .story {
-                position: absolute;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        }
+    #navigation {
+        text-align: center;
+        height: 50px;
     }
-}
-
-#progress {
-    height: 5px;
-    width: 0%;
 }
