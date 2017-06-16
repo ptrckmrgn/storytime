@@ -40,7 +40,7 @@ const animatePolygons = (duration) => {
       four: toPolygonArray[i].four,
       five: toPolygonArray[i].five,
       six: toPolygonArray[i].six,
-      ease: Power3.easeOut,
+      ease: Power2.easeOut,
       onUpdate: () => {
         paths[i].setAttribute("d", `M${obj.one},${obj.two}L${obj.three},${obj.four}L${obj.five},${obj.six}Z`);
       }
@@ -55,7 +55,7 @@ const animatePolygons = (duration) => {
     TweenLite.to(path, duration, {
       opacity: toOpacity,
       fill: toColor,
-      ease: Power3.easeOut,
+      ease: Power2.easeOut,
     });
   });
 }

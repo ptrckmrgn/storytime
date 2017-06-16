@@ -31,6 +31,24 @@ const updateNavigation = (page) => {
     document.querySelector('#navigation-' + page).classList.remove('hidden');
 }
 
+// Load/unload the concise version of the story
+const loadConcise = (load) => {
+    const concise = document.querySelector('#concise');
+
+    if (load) {
+        concise.classList.remove("hidden");
+    }
+    else {
+        concise.classList.add("hiding");
+
+        // Delay "z-index" to allow opacity fade to finish
+        setTimeout(() => {
+            concise.classList.remove("hiding");
+            concise.classList.add("hidden");
+        }, 400);
+    }
+}
+
 // Load the story, svg and progress for the given page.
 const loadPage = () => {
     const hash = window.location.hash.substr(1);
@@ -38,12 +56,16 @@ const loadPage = () => {
 
     if (hash.substring(0, 4) === 'page') {
         page = hash.match(/\d+/)[0];
-    }
 
-    updatePolygonArrays(page, 1);
-    updateStory(page);
-    updateProgress(page);
-    updateNavigation(page);
+        loadConcise(false);
+        updatePolygonArrays(page, 1);
+        updateStory(page);
+        updateProgress(page);
+        updateNavigation(page);
+    }
+    else if (hash === 'concise') {
+        loadConcise(true);
+    }
 }
 
 // Removes svg attributes that interfere so that opacity/color are not doubled.

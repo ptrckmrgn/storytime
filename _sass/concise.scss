@@ -1,0 +1,22 @@
+#concise {
+    position: fixed;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.5s;
+    #concise-wrapper {
+        width: 700px;
+    }
+    &.hiding {
+        opacity: 0;
+    }
+    &.hidden {
+        opacity: 0;
+        z-index: -999;
+    }
+}
