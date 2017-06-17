@@ -15,10 +15,15 @@ const hideModal = (modal) => {
 // Setup event listeners
 modals.forEach((modal, i) => {
     const btn = document.querySelector('#btn-' + modal.id);
+    const btnConcise = document.querySelector('#btn-concise-' + modal.id);
     const close = document.querySelector('#close-' + modal.id);
 
     // Open modal
     btn.onclick = (event) => {
+        event.preventDefault();
+        modal.classList.remove("modal-hidden");
+    };
+    btnConcise.onclick = (event) => {
         event.preventDefault();
         modal.classList.remove("modal-hidden");
     };
