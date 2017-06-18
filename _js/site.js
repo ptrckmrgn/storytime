@@ -27,8 +27,9 @@ const updateNavigation = (page) => {
     navigations.forEach((navigation, i) => {
         navigation.classList.add('hidden');
     });
-
-    document.querySelector('#navigation-' + page).classList.remove('hidden');
+     if (page != 0) {
+         document.querySelector('#navigation-' + page).classList.remove('hidden');
+     }
 }
 
 // Load/unload the concise version of the story
@@ -49,20 +50,28 @@ const loadConcise = (load) => {
 }
 
 // Load the story, svg and progress for the given page
-const loadPage = () => {
-    const hash = window.location.hash.substr(1);
-    let page = 0;
-
-    if (hash.substring(0, 4) === 'page') {
-        page = hash.match(/\d+/)[0];
-
+const loadPage = (page) => {
+    if (page !== -1 ) {
         loadConcise(false);
         updatePolygonArrays(page, 1);
         updateStory(page);
         updateProgress(page);
         updateNavigation(page);
-    } else if (hash === 'concise') {
+    } else {
         loadConcise(true);
+    }
+}
+
+// Load the story, svg and progress for the given page
+const findPage = () => {
+    const hash = window.location.hash.substr(1);
+    let page = 0;
+
+    if (hash.substring(0, 4) === 'page') {
+        page = parseInt(hash.match(/\d+/)[0]);
+        loadPage(page);
+    } else if (hash === 'concise') {
+        loadPage(-1);
     }
 }
 
@@ -94,13 +103,35 @@ const checkDevice = () => {
 window.onload = () => {
     initialiseSvg();
     checkDevice();
-    loadPage();
+    findPage();
 }
 
 window.onhashchange = () => {
-    loadPage();
+    findPage();
 };
 
 window.onresize = () => {
     checkDevice();
 }
+
+window.onkeydown = (event) => {
+    const hash = window.location.hash.substr(1);
+    let page;
+
+    if (hash.substring(0, 4) === 'page') {
+        page = parseInt(hash.match(/\d+/)[0]);
+    } else if (hash === '') {
+        page = 0;
+    }
+
+    if (event.keyCode == '37') { // Left arrow
+        if (page > 0) {
+            window.location.hash = '#page-' + (page - 1);
+        }
+    }
+    else if (event.keyCode == '39') { // Right arrow
+        if (page < numPages - 1) {
+            window.location.hash = '#page-' + (page + 1);
+        }
+    }
+};

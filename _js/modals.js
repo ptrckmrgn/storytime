@@ -35,7 +35,7 @@ modals.forEach((modal, i) => {
 });
 
 // Close modal by clicking outside it
-window.onclick = (event) => {
+window.onmousedown = (event) => {
     if (event.target.closest('.modal') != null) {
         hideModal(event.target);
     }
