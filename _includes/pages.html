@@ -10,12 +10,12 @@
 	        {% include svgs/beams.html page="2" %}
 			{% include svgs/platform.html page="3" %}
 			{% include svgs/questions.html page="4" %}
-			{% include svgs/cambodia.html page="5" %}
+			{% include svgs/globe.html page="5" %}
 			{% include svgs/computer.html page="6" %}
 			{% include svgs/advisian.html page="7" %}
 			{% include svgs/code.html page="8" %}
 			{% include svgs/postits.html page="9" %}
-			{% include svgs/bindle2.html page="10" %}
+			{% include svgs/bindle.html page="10" %}
 	        {% include svgs/deloitte.html page="11" %}
 	    </div>
 	</div>
@@ -52,11 +52,11 @@
 		{% for story in site.data.stories %}
 		<div id="navigation-{{ forloop.index }}" class="navigation hidden">
 			{% if story.navigation == 'middle' %}
-			<a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
-			<a href="#page-{{ forloop.index | plus: 1 }}" class="btn btn-primary">Next</a>
+				<a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
+				<a href="#page-{{ forloop.index | plus: 1 }}" class="btn btn-primary" style="margin-left: 5px;">Next</a>
 			{% else %}
-			<a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
-			<a href="#page-0" class="btn btn-secondary">Finish</a>
+				<a href="#page-{{ forloop.index | minus: 1 }}" class="btn">Back</a>
+				<a href="#page-0" class="btn btn-secondary" style="margin-left: 5px;">Finish</a>
 			{% endif %}
 		</div>
 		{% endfor %}

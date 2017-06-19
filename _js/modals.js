@@ -22,10 +22,12 @@ modals.forEach((modal, i) => {
     btn.onclick = (event) => {
         event.preventDefault();
         modal.classList.remove("modal-hidden");
+        modal.scrollTop = 0;
     };
     btnConcise.onclick = (event) => {
         event.preventDefault();
         modal.classList.remove("modal-hidden");
+        modal.scrollTop = 0;
     };
 
     // Close modal
